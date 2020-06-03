@@ -1,0 +1,25 @@
+/* layouts CSS */
+
+#board.trello-layout-vertical, #board.trello-layout-horizontal, #board.trello-layout-mixed {
+  display: flex;
+}
+
+#board.trello-layout-vertical {
+  flex-direction: column;
+}
+
+#board.trello-layout-horizontal {
+  flex-direction: row;
+}
+
+#board.trello-layout-mixed {
+  position: relative;
+  flex-wrap: wrap;
+}
+
+#board.trello-layout-vertical > .list-wrapper, 
+#board.trello-layout-mixed > .list-wrapper {
+  margin: 5px;
+  height: auto;
+  width: auto;
+}
