@@ -1,4 +1,9 @@
 (function() {
+  // check to make sure that we are in the right domain
+  if (!location.toString().match(/.*trello.com\/b\/.*/)) {
+    reportScriptError();
+  }
+
   if (window.hasRun) {
     return;
   }

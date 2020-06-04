@@ -4,6 +4,8 @@ Firefox plugin to toggle Trello board views (vertical, horizontal). Inspired by 
 
 # Demo
 
+![demo gif](demo/layout-trello-ff-demo.gif)
+
 
 # LICENCE
 
