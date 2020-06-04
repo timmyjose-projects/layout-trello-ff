@@ -1,15 +1,16 @@
 /* layouts CSS */
 
-#board.trello-layout-vertical, #board.trello-layout-horizontal, #board.trello-layout-mixed {
+#board.trello-layout-vertical, #board.trello-layout-mixed {
   display: flex;
 }
 
 #board.trello-layout-vertical {
   flex-direction: column;
+  overflow-y: auto;
 }
 
 #board.trello-layout-horizontal {
-  flex-direction: row;
+  overflow-y: auto;
 }
 
 #board.trello-layout-mixed {
@@ -21,5 +22,5 @@
 #board.trello-layout-mixed > .list-wrapper {
   margin: 5px;
   height: auto;
-  width: auto;
+  width: 25vh;
 }
