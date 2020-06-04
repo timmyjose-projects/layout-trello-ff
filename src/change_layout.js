@@ -17,7 +17,7 @@ function listenForClicks() {
           browser.tabs.sendMessage(tabs[0].id, {
             command: "changeLayout",
             layoutClass: layoutClass
-          })
+          }).then(window.close());
         });
     }
 
@@ -27,7 +27,7 @@ function listenForClicks() {
 
     browser.tabs.query({active: true, currentWindow: true})
       .then(changeLayout)
-      .catch(reportError);
+      .catch(reportError)
   });
 }
 
