@@ -1,0 +1,21 @@
+/* extension popup CSS */
+
+.hidden {
+  display: none;
+}
+
+.button {
+  margin: 5% auto;
+  text-align: center;
+  padding: 3px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.trello-layout {
+  background-color: #abcabc;
+}
+
+.trello-layout:hover {
+  background-color: #cbacba;
+}

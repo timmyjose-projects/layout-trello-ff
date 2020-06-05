@@ -11,12 +11,28 @@
   },
 
   "permissions": [
-    "activeTab"
+    "tabs",
+    "activeTab",
+    "cookies",
+    "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": ["background_scripts/background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches" : ["*://*.trello.com/b/*"],
+      "js" : ["content_scripts/change_page_layout.js"]
+    }
   ],
 
   "browser_action": {
-    "default_icon": "icons/change_layout_48.png",
+    "default_icon": {
+      "48": "icons/change_layout_48.png"
+    },
     "default_title": "layout-trello-ff",
-    "default_popup": "src/change_layout.html"
+    "default_popup": "popup/change_layout.html"
   }
 }
