@@ -2,6 +2,8 @@
 
 #board.trello-layout-vertical, #board.trello-layout-mixed {
   display: flex;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 #board.trello-layout-vertical {

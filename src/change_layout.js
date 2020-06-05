@@ -1,4 +1,8 @@
 function listenForClicks() {
+  document.addEventListener("load", () => {
+    alert("Page loaded!");
+  });
+
   // this is here instead of js/toggle_helper.js since this is run in the context of the 
   // extension whereas that script is run in the context of the currently loaded tab
   document.addEventListener("click", (evt) => {
