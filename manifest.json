@@ -1,7 +1,7 @@
 {
   "manifest_version": 2.0,
   "name" : "layout-trello-ff",
-  "version": "1.0",
+  "version": "1.1",
   "author": "Timmy Jose<zoltan.jose@gmail.com>",
 
   "description": "A Trello board view layout changer for Firefox - horizontal, vertical and mixed layouts",
