@@ -34,11 +34,5 @@
     },
     "default_title": "layout-trello-ff",
     "default_popup": "popup/change_layout.html"
-  },
-
-  "browser-specific_settings": {
-    "gecko": {
-      "id": "foo@bar.com"
-    }
   }
 }
